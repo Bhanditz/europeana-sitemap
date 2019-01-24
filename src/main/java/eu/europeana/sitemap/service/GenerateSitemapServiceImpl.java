@@ -82,7 +82,7 @@ public class GenerateSitemapServiceImpl implements GenerateSitemapService {
     private String portalBaseUrl;
     @Value("${portal.record.urlpath}")
     private String portalRecordUrlPath;
-    @Value("${min.record.completeness}")
+    @Value("${min.record.completeness:0}")
     private int minRecordCompleteness;
 
     private String status = "initial";
